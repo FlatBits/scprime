@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# Launch sia
-siad -M $SIA_MODULES
+# Launch scprime
+spd -M $SCPRIME_MODULES
