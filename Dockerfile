@@ -8,8 +8,7 @@ ENV DAEMON_DATA_DIR /opt/scprime/daemon-data
 EXPOSE 4282 4283 4285
 
 COPY scprime /opt/scprime
-COPY scripts /scripts
 
 WORKDIR /opt/scprime
 
-ENTRYPOINT ["/scripts/init.sh"]
+ENTRYPOINT spd -M "${SCPRIME_MODULES}"
